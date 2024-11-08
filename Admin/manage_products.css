@@ -1,0 +1,115 @@
+/* Mobile devices (Portrait and Landscape) */
+@media screen and (max-width: 767px) {
+    /* Styles for mobile devices go here */
+}
+
+/* Tablets (Portrait and Landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets go here */
+}
+
+/* Laptops and smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for laptops go here */
+}
+
+/* Desktops (Large screens) */
+@media screen and (min-width: 1441px) {
+    /* Styles for desktops go here */
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

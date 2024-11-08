@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="place_order.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <h2>Order Summary</h2>
+        <ul id="order-summary"></ul>
+
+        <h2>Shipping Options</h2>
+        <form id="checkout-form">
+            <label for="shipping-option">Choose a shipping option:</label>
+            <select id="shipping-option" required>
+                <option value="standard">Standard - 70.00</option>
+                <option value="express">Express - 120.00</option>
+            </select>
+
+            <label for="courier">Choose a courier:</label>
+            <input type="text" id="courier" required placeholder="e.g., LBC, J&T">
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <script src="place_order.js"></script>
+</body>
+</html>

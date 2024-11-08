@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    <main>
+        <form id="add-to-cart-form">
+            <label for="product">Product Name:</label>
+            <input type="text" id="product" name="product" required>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            
+            <button onclick="window.location.href='../Checkout/checkout.html';">Proceed to Checkout</button>
+        </form>
+
+        <h2>Cart Items</h2>
+        <ul id="cart-items"></ul>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>

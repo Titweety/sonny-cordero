@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders</title>
+    <link rel="stylesheet" href="manage_orders.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Orders</h1>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="manage_orders.html">Manage Orders</a></li>
+                <li><a href="manage_products.html">Manage Products</a></li>
+                <li><a href="admin_login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="orders-section">
+            <h2>Orders List</h2>
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Orders will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Laptop E-Store. All rights reserved.</p>
+    </footer>
+    <script src="manage_orders.js"></script>
+</body>
+</html>
