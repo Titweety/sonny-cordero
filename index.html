@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop E-Store</title>
-    <link rel="stylesheet" href="landing.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Laptop E-Store</h1>
-        <nav>
-            <ul>
-                <li><a href="./Sign Up/signup.html">Sign Up</a></li>
-                <li><a href="./Sign Up/login.html">Login</a></li>
-                <li><a href="./Admin/admin_login.html">Login as Admin</a></li>
-                <li><a href="./Product/product.html">Browse Products</a></li>
-                <li><a href="./Tracking Order/tracking_order.html">Track Orders</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Best Products, Best Prices</h2>
-            <p>Shop now and enjoy great deals on a wide range of laptop products!</p>
-            <a href="./Sign Up/signup.html" class="btn btn-dark">Shop Now</a>
-        </section>
-    </main>
-     
-        <!-- Bootstrap Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="car1.jpg" class="d-block mx-auto" alt="First slide" style="height: 250px;">
-            </div>
-            <div class="carousel-item">
-            <img src="car2.jpg" class="d-block mx-auto" alt="Second slide" style="height: 250px;">
-            </div>
-            <div class="carousel-item">
-            <img src="car3.jpg" class="d-block mx-auto" alt="Third slide" style="height: 250px;">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Welcome to Laptop E-Store</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Laptop<span>estore</span>.</a>
         </div>
-    
-    <script src="script.js"></script>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="./Admin/admin_login.html">Login as Admin</a></li>
+        <li><a href="./Product/product.html">Browse Product</a></li>
+        <li><a href="./Tracking Order/tracking_order.html">Track Orders</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn sign__up" onclick="navigateToSignup()">Sign Up</button>
+        <button class="btn sign__in" onclick="navigateToLogin()">Login</button>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-1">
+          <span><i class="ri-movie-2-line"></i></span>
+          Creator
+        </div>
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-steam-fill"></i></span>
+          Gamers
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-angularjs-line"></i></span>
+          Productivity
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-shake-hands-fill"></i></span>
+          Business
+        </div>
+        <img src="https://asset.msi.com/resize/image/global/product/product_6_20190328170626_5c9c8e92710f4.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>find your ideal <span>laptop</span> unleash your potential</h1>
+        <p>
+          Welcome to Laptop E-Store, your destination for premium laptops at unbeatable prices. Whether you're a student, professional, or gamer, we offer top brands, cutting-edge technology, and sleek designs. Enjoy fast delivery, exclusive deals, and exceptional service. Find your perfect laptop today!
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Processor</h5>
+              <div>
+                <span><i class="ri-brain-2-line"></i></span>
+                <input type="text" placeholder="Intel Core i5" />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Ram</h5>
+              <div>
+                <span><i class="ri-ram-line"></i></span>
+                <input type="text" placeholder="32GB RAM" />
+              </div>
+            </div>
+          </div>
+          <a href="./Product/product.html">
+            <button type="button">Search</button>
+          </a>
+        </form>
+        <div class="bar">
+          Copyright © 2024 Laptop E-Store. All rights reserved.
+        </div>
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
